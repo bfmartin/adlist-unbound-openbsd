@@ -22,11 +22,8 @@ TMP2=$(mktemp -q) || exit 1
 clean_up() { rm -rf "$TMP1" "$TMP2"; }
 
 for i in $urls; do
-  # three different ways to download: curl, wget, and httpdl.pl
-  # only one of the following three lines should be uncommented
-  /usr/local/bin/curl -s --output "$TMP1" "$i"
-  # /usr/local/bin/wget -q -O "$TMP1" "$i"
-  # /usr/local/bin/httpdl.pl "$i" "$TMP1"
+  # download
+  /usr/bin/ftp -o "$TMP1" "$i" > /dev/null
 
   # whitelist some domains:
   # - kaltura.com for videos from americastestkitchen.com

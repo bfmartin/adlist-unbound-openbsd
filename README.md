@@ -29,20 +29,12 @@ script.
 
 ### Whitelisting
 
-Domains may be excluded from blocking using simple whitelisting techniques. 
+Domains may be excluded from blocking using simple whitelisting
+techniques. Examples are included.
 
-### Minimal dependencies
+### No external dependencies
 
-The ```curl``` package is required. Otherwise, everything is Bourne
-Shell Scripts, and run on a base OpenBSD install.
-
-**Note:** Alternatively, ```wget``` may be used instead of
-```curl```. This requires editing one file, but is fairly
-straightforward. See ```adlist-unbound-fetch.sh``` for details.
-
-(I'm working on a Perl script to replace ```curl```, that will remove
-any external dependencies. It's not ready yet.)
-
+This works using a base install of OpenBSD.
 
 ## Programs
 
@@ -68,10 +60,6 @@ not to, to avoid possible problems in downloading data.
 
 
 ## Install
-
-### Install package dependencies
-
-      # pkg_add curl--
 
 ### Install adlist programs
 
