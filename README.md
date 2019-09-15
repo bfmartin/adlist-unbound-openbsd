@@ -85,7 +85,7 @@ for the dias.conf below.
 
 Add the following line to ```/var/unbound/etc/unbound.conf```
 
-  include: /var/unbound/etc/adlist.conf
+    include: /var/unbound/etc/adlist.conf
 
 Add it to the ```server:``` section, something like this:
 
