@@ -79,7 +79,7 @@ other scripts, and looks for them in the same directory.
 They can go pretty much anywhere but be sure to install all programs
 in the same directory. If you choose somewhere other than
 ```/usr/local/bin```, change the path for the cronjob below, and also
-for the doas.conf below.
+for the ```/etc/doas.conf``` below.
 
 ### Configure unbound
 
@@ -119,6 +119,6 @@ bottom of the ```/etc/doas.conf``` file.
 Running this weekly should be sufficient. Enter this into the crontab
 of a non-privileged user:
 
-      0 1 * * 0 /usr/local/bin/adlist-unbound-cron.sh
+      ~ 1 * * 0 /usr/local/bin/adlist-unbound-cron.sh
 
-This will run it Sundays at 1 AM.
+This will run it Sundays at a random time between 1 AM and 2 AM.
