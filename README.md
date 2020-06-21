@@ -79,7 +79,7 @@ other scripts, and looks for them in the same directory.
 They can go pretty much anywhere but be sure to install all programs
 in the same directory. If you choose somewhere other than
 ```/usr/local/bin```, change the path for the cronjob below, and also
-for the dias.conf below.
+for the doas.conf below.
 
 ### Configure unbound
 
