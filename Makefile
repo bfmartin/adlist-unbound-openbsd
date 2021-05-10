@@ -11,7 +11,7 @@ notes:
 # outputs date, line-count, file-count, average-lines-per-file
 # ignore blank lines and comments
 count:
-	@sh -c 'FCOUNT=$$(ls ${FILES} | wc -l) && \
+	@FCOUNT=$$(ls ${FILES} | wc -l) && \
 		LCOUNT=$$(cat ${FILES} | sed "s/#.*//" | awk NF | wc -l) && \
 		AVG=$$(echo "scale=1;$$LCOUNT/$$FCOUNT" | bc -l) && \
-		echo $$(date +%Y-%m-%d), "$$LCOUNT", "$$FCOUNT", "$$AVG"'
+		echo $$(date +%Y-%m-%d), "$$LCOUNT", "$$FCOUNT", "$$AVG"
