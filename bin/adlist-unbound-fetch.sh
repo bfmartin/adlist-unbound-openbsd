@@ -9,7 +9,7 @@
 urls=" \
   https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts \
   https://adaway.org/hosts.txt \
-  https://pgl.yoyo.org/adservers/serverlist.php
+  https://pgl.yoyo.org/adservers/serverlist.php"
 # http://winhelp2002.mvps.org/hosts.txt"
 
 trap 'clean_up' EXIT
