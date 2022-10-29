@@ -37,7 +37,7 @@ for i in $urls; do
     grep -v localdomain        | \
     grep -v '0.0.0.0'          | \
     sed '/^\s*$/d'             | \
-    # whitelist:                 \
+    # whitelist:
     grep -v kaltura.com        | \
     grep -v thepiratebay.org   | \
     grep -v btstatic.com       | \
