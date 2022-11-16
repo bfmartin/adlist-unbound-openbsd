@@ -28,6 +28,7 @@ for i in $urls; do
   # - kaltura.com for videos from americastestkitchen.com
   # - thepiratebay.org for, um..., stuff
   # - btstatic.com, dpm.demdex.net, and thebrighttag.com for sephora.com login
+  # - coveo.com for lcbo.com
   grep -vE '#|<|]|:' "$TMP1"   | \
     sed 's/0\.0\.0\.0//'       | \
     sed 's/127\.0\.0\.1//'     | \
@@ -42,7 +43,8 @@ for i in $urls; do
     grep -v thepiratebay.org   | \
     grep -v btstatic.com       | \
     grep -v dpm.demdex.net     | \
-    grep -v thebrighttag.com     \
+    grep -v thebrighttag.com   | \
+    grep -v coveo.com            \
     >> "$TMP2"
 
   rm -f "$TMP1"
