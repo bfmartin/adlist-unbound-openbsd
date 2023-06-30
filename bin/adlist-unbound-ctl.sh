@@ -15,7 +15,7 @@ CFG="$1"
 
 install -o root -g wheel -m 0644 "$CFG" "$ADLISTCFG"
 
-rcctl restart unbound
+rcctl restart unbound > /dev/null
 
 # an alternative to the above restart is to signal unbound to re-read
 # its config files, but not all unbound installations are configured
